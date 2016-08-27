@@ -32,27 +32,28 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li><p class="navbar-brand" style="color:#ffffff; font-size:large;">Go! Start your business! Go! Start your job! Go! start investing!</p></li>
+          <li><a href="index.aspx"><span class="glyphicon glyphicon-off" style="color:#ffffff; font-size:large;"></span></a></li>
         </ul>
       </div>
     </nav>
     <form id="form2" runat="server">
         <div class="jumbotron jumbotron2" style="text-align:left; background-color:#ffffff">
-            <h1 style="font-family:Arial">Send your CV</h1>
+            <h1 style="font-family:Arial"><span class="glyphicon glyphicon-list-alt"></span> Send your CV</h1>
             <p>and you might be hired for an absolutely awesome job.</p>
             <asp:Button Text="Send CV" runat="server" CssClass="btn-primary" />
         </div>
         <div class="jumbotron jumbotron2" style="text-align:right;">
-            <h1 style="font-family:Arial">Start a project</h1>
+            <h1 style="font-family:Arial">Start a project <span class="glyphicon glyphicon-folder-open"></span></h1>
             <p>to find investors. Others can also apply if there are positions available.</p>
             <asp:Button Text="Start Project" runat="server" CssClass="btn-primary" />
         </div>
         <div class="jumbotron jumbotron2" style="text-align:left; background-color:#ffffff">
-            <h1 style="font-family:Arial">Look for projects</h1>
+            <h1 style="font-family:Arial"><span class="glyphicon glyphicon-search"></span> Look for projects</h1>
             <p>that suits your profession. Some projects have positions available for hire.</p>
             <asp:Button Text="Look for Project" runat="server" CssClass="btn-primary" />
         </div>
         <div class="jumbotron jumbotron2" style="text-align:right;">
-            <h1 style="font-family:Arial">Apply for a job</h1>
+            <h1 style="font-family:Arial">Apply for a job <span class="glyphicon glyphicon-user"></span></h1>
             <p>that suits your profession. There are many jobs available.</p>
             <asp:Button Text="Apply" runat="server" CssClass="btn-primary"/>
         </div>
