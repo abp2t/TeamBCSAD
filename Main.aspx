@@ -28,7 +28,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <p class="navbar-brand" style="font-family:'AR HERMANN'; color:#ffffff; font-size:xx-large;">GoStart</p>
+          <a href="Main.aspx" class="navbar-brand" style="font-family:'AR HERMANN'; color:#ffffff; font-size:xx-large;">GoStart</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li><p class="navbar-brand" style="color:#ffffff; font-size:large;">Go! Start your business! Go! Start your job! Go! start investing!</p></li>
@@ -40,22 +40,22 @@
         <div class="jumbotron jumbotron2" style="text-align:left; background-color:#ffffff">
             <h1 style="font-family:Arial"><span class="glyphicon glyphicon-list-alt"></span> Send your CV</h1>
             <p>and you might be hired for an absolutely awesome job.</p>
-            <asp:Button Text="Send CV" runat="server" CssClass="btn-primary" />
+            <asp:Button Text="Send CV" runat="server" CssClass="btn btn-primary" />
         </div>
         <div class="jumbotron jumbotron2" style="text-align:right;">
             <h1 style="font-family:Arial">Start a project <span class="glyphicon glyphicon-folder-open"></span></h1>
             <p>to find investors. Others can also apply if there are positions available.</p>
-            <asp:Button Text="Start Project" runat="server" CssClass="btn-primary" />
+            <asp:Button Text="Start Project" runat="server" CssClass="btn btn-primary" />
         </div>
         <div class="jumbotron jumbotron2" style="text-align:left; background-color:#ffffff">
             <h1 style="font-family:Arial"><span class="glyphicon glyphicon-search"></span> Look for projects</h1>
             <p>that suits your profession. Some projects have positions available for hire.</p>
-            <asp:Button Text="Look for Project" runat="server" CssClass="btn-primary" />
+            <asp:Button Text="Look for Project" runat="server" CssClass="btn btn-primary" />
         </div>
         <div class="jumbotron jumbotron2" style="text-align:right;">
             <h1 style="font-family:Arial">Apply for a job <span class="glyphicon glyphicon-user"></span></h1>
             <p>that suits your profession. There are many jobs available.</p>
-            <asp:Button Text="Apply" runat="server" CssClass="btn-primary"/>
+            <asp:Button Text="Apply" runat="server" CssClass="btn btn-primary"/>
         </div>
     </form>
     <div class="col-md-12" style="background-color:#305d7e; color:#ffffff; height:100%">
