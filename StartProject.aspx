@@ -34,7 +34,7 @@
     <div class="col-md-12" style="padding-bottom:30px; margin:0; width:100%;">
         <div class="col-md-12" style="border-bottom:1px solid">
             <center>
-                <h1>Start a new project</h1>
+                <h1>PROJECTS</h1>
             </center>
         </div>
         <div class="col-md-3">
