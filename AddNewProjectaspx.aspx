@@ -51,7 +51,9 @@
     <form id="form1" runat="server" style="padding-top:100px;">
     <div>
         <div class="col-md-12" style="border-bottom:1px solid;">
-            <h2>Add New Project</h2>
+            <center>
+                <h2>Add New Project</h2>
+            </center>
         </div>
         <div class="col-md-6" style="padding-top: 15px;">
             <center>
