@@ -69,7 +69,7 @@
         </div>
     </div>    
     </form>
-    <div class="col-md-12" style="background-color:#70a4c8; height:100%">
+    <div class="col-md-12" style="background-color:#305d7e; color:#ffffff; height:100%">
         <center>
             <p style="padding-top:30px; padding-bottom:60px;">Created by: TeamBCSAD</p>
         </center>
