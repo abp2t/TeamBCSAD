@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        a{
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:none;
+        }
+    </style>
 </head>
 <body>
     <div class="col-md-12">
@@ -22,43 +30,36 @@
         </ul>
       </div>
     </nav>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" style="padding-top:100px;">
     <div class="col-md-12" style="padding-bottom:30px; margin:0; width:100%;">
-        <div class="col-md-6">
+        <div class="col-md-12" style="border-bottom:1px solid">
             <center>
-                <h1>Log In</h1>
-                <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Username" Width="45%" CssClass="textbox"></asp:TextBox>
-                </div>
-                <br /><br />
-                <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Password" TextMode="Password" Width="45%" CssClass="textbox"></asp:TextBox>
-                </div>
-                <br /><br />
-                <asp:Button Text="Login" runat="server" CssClass="btn-primary" />
+                <h1>Start a new project</h1>
             </center>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
             <center>
-                <h1>Sign Up</h1>
-                <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Full Name" Width="45%" CssClass="textbox"></asp:TextBox>
-                </div>
-                <br /><br />
-                <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Address" Width="45%" CssClass="textbox"></asp:TextBox>
-                </div>
-                <br /><br />
-                <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Username" Width="45%" CssClass="textbox"></asp:TextBox>
-                </div>
-                <br /><br />
-                <div class="col-md-12">
-                    <asp:TextBox runat="server" TextMode="Password" PlaceHolder="Password" Width="45%" CssClass="textbox"></asp:TextBox>
-                </div>
-                <br /><br />
-                <asp:Button Text="Signup" runat="server" CssClass="btn-primary"/>
+                <img src="user.png" class="img-rounded" width="110" style="margin:30px;" />
+                <div style="border:1px solid #0584fe; padding: 5px;"><a href="StartProject.aspx">Add New Project</a></div>
             </center>
+        </div>
+        <div class="col-md-9" style="border-left:1px solid; padding:0; padding-left:170px;">
+            <div class="col-md-4" style="border:1px solid #0584fe; padding: 10px; margin: 15px;">
+                <p style="font-weight:300">Project Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="col-md-4" style="border:1px solid #0584fe; padding: 10px; margin: 15px;">
+                <p style="font-weight:300">Project Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="col-md-4" style="border:1px solid #0584fe; padding: 10px; margin: 15px;">
+                <p style="font-weight:300">Project Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="col-md-4" style="border:1px solid #0584fe; padding: 10px; margin: 15px;">
+                <p style="font-weight:300">Project Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
         </div>
     </div>    
     </form>
