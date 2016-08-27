@@ -6,6 +6,20 @@
 <head runat="server">
     <title>GoStart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .textbox{
+            padding-left: 10px;
+            border-radius: 5px;
+            height:35px;
+        }
+        .btn-primary{
+            border-radius: 5px;
+            width: 100px;
+            height: auto;
+        }
+    </style>
 </head>
 <body style=" background-color:#70a4c8;">
     <form id="form1" runat="server">
@@ -20,11 +34,11 @@
             <center>
                 <h1>Log In</h1>
                 <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Username" Width="40%"></asp:TextBox>
+                    <asp:TextBox runat="server" PlaceHolder="Username" Width="45%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <br /><br />
                 <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Password" TextMode="Password" Width="40%"></asp:TextBox>
+                    <asp:TextBox runat="server" PlaceHolder="Password" TextMode="Password" Width="45%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <br /><br />
                 <asp:Button Text="Login" runat="server" CssClass="btn-primary" />
@@ -32,29 +46,24 @@
         </div>
         <div class="col-md-6">
             <center>
-                <h1>Sign In</h1>
-                <div class="col-md-6 text-right">
-                    <asp:Label runat="server" Text="Full Name:"></asp:Label>
-                </div>
-                <div class="col-md-6 text-left">
-                    <asp:TextBox runat="server"></asp:TextBox>
+                <h1>Sign Up</h1>
+                <div class="col-md-12">
+                    <asp:TextBox runat="server" PlaceHolder="Full Name" Width="45%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <br /><br />
-                <div class="col-md-6 text-right">
-                    <asp:Label runat="server" Text="Username:"></asp:Label>
-                </div>
-                <div class="col-md-6 text-left">
-                    <asp:TextBox runat="server"></asp:TextBox>
+                <div class="col-md-12">
+                    <asp:TextBox runat="server" PlaceHolder="Address" Width="45%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <br /><br />
-                <div class="col-md-6 text-right">
-                    <asp:Label runat="server" Text="Password:"></asp:Label>
-                </div>
-                <div class="col-md-6 text-left">
-                    <asp:TextBox runat="server" TextMode="Password"></asp:TextBox>
+                <div class="col-md-12">
+                    <asp:TextBox runat="server" PlaceHolder="Username" Width="45%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <br /><br />
-                <asp:Button Text="Login" runat="server" CssClass="btn-primary"/>
+                <div class="col-md-12">
+                    <asp:TextBox runat="server" TextMode="Password" PlaceHolder="Password" Width="45%" CssClass="textbox"></asp:TextBox>
+                </div>
+                <br /><br />
+                <asp:Button Text="Signup" runat="server" CssClass="btn-primary"/>
             </center>
         </div>
     </div>
