@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
 
 <!DOCTYPE html>
 
@@ -27,53 +28,62 @@
         <center>
         <h1 style="font-family:'AR HERMANN'">GoStart</h1>
         <p>Go! Start your business! Go! Start your job! Go! Start investing!</p>
-        </center>
+      </center>
     </div>
     <form id="form1" runat="server">
     <div class="col-md-12" style="padding-bottom:30px; margin:0; width:100%;">
         <div class="col-md-6">
-            <center>
+         <center>
                 <h1>Log In</h1>
                 <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Username" Width="45%" CssClass="textbox"></asp:TextBox>
+                       <asp:TextBox ID="txtEmail" Placeholder="Email" runat="server"  Width="45%" CssClass="textbox"></asp:TextBox>
+            
                 </div>
                 <br /><br />
                 <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Password" TextMode="Password" Width="45%" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox runat="server" Placeholder="Password" ID="txtPassword"  TextMode="Password" Width="45%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <br /><br />
-                <asp:Button Text="Login" runat="server" CssClass="btn-primary" />
-            </center>
+             <asp:Button ID="btnLogin" Text="Login" runat="server" CssClass="btn-primary" OnClick="Submit" />
+              </center>  
+           
         </div>
         <div class="col-md-6">
-            <center>
-                <h1>Sign Up</h1>
+        <center>
+                           <h1>Sign Up</h1>
                 <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Full Name" Width="45%" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox  ID="txtName" Placeholder="Enter Your Name"  Width="45%" CssClass="textbox" runat="server"></asp:TextBox>
                 </div>
                 <br /><br />
                 <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Address" Width="45%" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox runat="server" Placeholder="Enter Your Address" ID="txtAddress" Width="45%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <br /><br />
                 <div class="col-md-12">
-                    <asp:TextBox runat="server" PlaceHolder="Username" Width="45%" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox runat="server" Placeholder="Enter Your Email"  ID="txtEmailR"   Width="45%" CssClass="textbox"></asp:TextBox>
                 </div>
+                <br /><br />
+            <div class="col-md-12">
+                    <asp:TextBox  TextMode="Password" ID="txtPasswordR"  Placeholder="Enter Your Password"  Width="45%" CssClass="textbox" runat="server"></asp:TextBox>
+                      </div>
                 <br /><br />
                 <div class="col-md-12">
-                    <asp:TextBox runat="server" TextMode="Password" PlaceHolder="Password" Width="45%" CssClass="textbox"></asp:TextBox>
-                </div>
+                    <asp:TextBox  TextMode="Password" ID="txtConPasswordR"  Placeholder="Confirm-Password" Width="45%" CssClass="textbox" runat="server"></asp:TextBox>
+                      </div>
                 <br /><br />
-                <asp:Button Text="Signup" runat="server" CssClass="btn-primary"/>
-            </center>
+                <asp:Button Text="Signup" ID="btnRegister" OnClick="register" runat="server" CssClass="btn-primary"/>
+           </center>
+ 
         </div>
     </div>    
     </form>
-    <div class="col-md-12" style="background-color:#305d7e; color:#ffffff; height:100%">
-        <center>
-            <p style="padding-top:30px; padding-bottom:60px;">Created by: TeamBCSAD</p>
+    <div class="col-md-12" style="background-color:#70a4c8; height:100%">
+        <center>  <p style="padding-top:30px; padding-bottom:60px;">Created by: TeamBCSAD</p>
         </center>
+
     </div>
     </div>
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help

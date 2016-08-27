@@ -75,13 +75,14 @@
             <div class="col-md-12">
                 <asp:Label ID="Label5" runat="server" Text="Insert Picture: "></asp:Label><br /><br />
                 <asp:FileUpload ID="FileUpload1" runat="server" /><br />
-                <asp:Image ID="imgProject" ImageUrl="~/ImageHandler.ashx?imgID=3" runat="server" Height="150px" Width="200px"/>
+                <asp:Image ID="imgProject" ImageUrl="" runat="server" Height="150px" Width="200px"/>
             </div>
         </div>
         <div class="col-md-12">
             <center>
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="Submit" CssClass="btns"/>
             </center>
+            <asp:GridView ID="GridView1" runat="server"></asp:GridView>
         </div> 
     </div>
     </form>
