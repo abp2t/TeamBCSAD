@@ -43,6 +43,12 @@
             border-top: 1px solid rgba(0, 0, 0, 0.1);
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
+        .no-space{
+            padding-bottom:0;
+            padding-top:0;
+            margin-bottom:0;
+            margin-top:0;
+        }
     </style>
 </head>
 <body>
@@ -62,11 +68,16 @@
     <div>
         <div class="col-md-10 col-md-offset-2">
             <div class="col-md-2">
-                <img src="user.png" class="img-rounded" width="110" style="margin:30px;" />
+                <img src="sao.png" width="130" style="margin:30px;" />
             </div>
-            <div class="col-md-10">
-                <h2>SAO Project, 2020</h2>
-                <p>Kayaba Akihiko</p>
+            <div class="col-md-3 text-left" style="padding-top:25px">
+                <h2 class="no-space">SAO Project</h2>
+                <h4 class="no-space">2020</h4>
+                <p class="no-space">Kayaba Akihiko</p>
+            </div>
+            <div class="col-md-5 text-left" style="padding-top:25px">
+                <h4>Current Donations: P98,329.24</h4>
+                <h4>Open Positions: 3</h4>
             </div>
         </div>
         <div class="col-md-12" style="padding-top: 15px; border-top:1px solid;">
@@ -83,6 +94,7 @@
                 <div class="col-md-12" style="margin-bottom:10px;">
                     <div class="col-md-6">
                         <p style="font-size:larger">Beta Tester</p>
+                        <p>*Note that the beta tester will be allowed to access the game before its release.</p>
                     </div>
                     <div class="col-md-6 text-right">
                         <a href="StartProject.aspx" class="btns">Apply</a>
@@ -90,14 +102,16 @@
                 </div>
                 <div class="col-md-12" style="margin-bottom:10px;">
                     <div class="col-md-6">
-                        <p style="font-size:larger">Beta Tester</p>
+                        <p style="font-size:larger">3D Model & Environment Designer</p>
+                        <p>*Note that the designer must be knowledgeable in using PBR.</p>
                     </div>
                     <div class="col-md-6 text-right">
                         <a href="StartProject.aspx" class="btns">Apply</a>
                     </div>
                 </div><div class="col-md-12" style="margin-bottom:10px;">
                     <div class="col-md-6">
-                        <p style="font-size:larger">Beta Tester</p>
+                        <p style="font-size:larger">Programmer</p>
+                        <p>*Note that the programmer must be knowledgeable in using Real Engine.</p>
                     </div>
                     <div class="col-md-6 text-right">
                         <a href="StartProject.aspx" class="btns">Apply</a>
@@ -107,7 +121,8 @@
         </div>
         <div class="col-md-12">
             <center>
-                <asp:Button ID="btnFund" runat="server" Text="Fund" CssClass="btns"/>
+                <asp:Button ID="btnFund" runat="server" Text="Fund" CssClass="btns" style="margin-bottom:0;"/>
+                <p style="margin-top:0;">Fund and recieve exclusive prizes and rewards.</p>
             </center>
         </div>
     </div>

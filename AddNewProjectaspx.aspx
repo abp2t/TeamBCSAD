@@ -15,6 +15,7 @@
             height:30px;
             margin-bottom:10px;
             margin-top:10px;
+            resize:none;
         }
         .btns{
             border:1px solid #0584fe;
@@ -55,36 +56,33 @@
                 <h2>Add New Project</h2>
             </center>
         </div>
-        <div class="col-md-6" style="padding-top: 15px;">
+        <div class="col-md-6" style="padding-top: 15px; border-right:1px solid;">
             <center>
                 <div class="col-md-12">
-                    <asp:TextBox ID="txtNameOfProject" runat="server" Placeholder="Name of Project" Width="45%" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox ID="txtNameOfProject" runat="server" Placeholder="Name of Project" Width="55%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <div class="col-md-12">
-                    <asp:TextBox ID="txtAboutTheProject" runat="server" Placeholder="About Project" Width="45%" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox ID="txtAboutTheProject" runat="server" TextMode="MultiLine" Placeholder="About Project" Width="55%" Height="100" CssClass="textbox"></asp:TextBox>
                 </div>
                 <div class="col-md-12">
-                    <asp:TextBox ID="txtPositionNeed" runat="server" Placeholder="Positions Needed" Width="45%" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox ID="txtPositionNeed" runat="server" Placeholder="Positions Needed" Width="55%" CssClass="textbox"></asp:TextBox>
                 </div>
                 <div class="col-md-12">
-                    <asp:TextBox ID="txtFund" runat="server" Placeholder="Funding Needed" Width="45%" CssClass="textbox"></asp:TextBox>
+                    <asp:TextBox ID="txtFund" runat="server" Placeholder="Funding Needed" Width="55%" CssClass="textbox"></asp:TextBox>
                 </div>
             </center>
         </div>
-        <div class="col-md-6" style="padding-top: 15px; padding-bottom:25px; border-left:1px solid;">
+        <div class="col-md-6" style="padding-top: 15px; padding-bottom:25px;">
             <div class="col-md-12">
                 <asp:Label ID="Label5" runat="server" Text="Insert Picture: "></asp:Label><br /><br />
                 <asp:FileUpload ID="FileUpload1" runat="server" /><br />
-                <asp:Image ID="imgProject" ImageUrl="" runat="server" Height="150px" Width="200px"/>
+                <asp:Image ID="imgProject" ImageUrl="~/ImageHandler.ashx?imgID=3" runat="server" Height="150px" Width="200px"/>
             </div>
         </div>
         <div class="col-md-12">
             <center>
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="Submit" CssClass="btns"/>
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btns"/>
             </center>
-                
-        
-           
         </div> 
     </div>
     </form>
