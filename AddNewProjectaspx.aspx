@@ -82,7 +82,9 @@
             <center>
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="Submit" CssClass="btns"/>
             </center>
-            <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                
+        
+           
         </div> 
     </div>
     </form>

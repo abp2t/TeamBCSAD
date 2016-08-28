@@ -12,7 +12,7 @@ public class ImageHandler : IHttpHandler {
        
         {
          //MySqlDataReader rd ;
-           
+            MySqlDataReader Reader;
        
                 string str = "";
                 str = "select Picture from addproject where ID=1";

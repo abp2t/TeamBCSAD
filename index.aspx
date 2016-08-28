@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <style>
         .textbox{
             padding-left: 10px;
@@ -79,11 +81,16 @@
     </form>
     <div class="col-md-12" style="background-color:#70a4c8; height:100%">
         <center>  <p style="padding-top:30px; padding-bottom:60px;">Created by: TeamBCSAD</p>
+            <i class="fa fa-twitter" style="font-size:36px"></i>
+            <i class="fa fa-facebook-official" style="font-size:36px"></i>
+            <i class="fa fa-cc-visa" style="font-size:36px"></i>
+            <i class="fa fa-cc-paypal" style="font-size:36px"></i>
         </center>
 
     </div>
     </div>
 </body>
 </html>
-Contact GitHub API Training Shop Blog About
+<center>Contact GitHub API Training Shop Blog About
 © 2016 GitHub, Inc. Terms Privacy Security Status Help
+    </center>

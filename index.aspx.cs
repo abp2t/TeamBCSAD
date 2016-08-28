@@ -49,7 +49,7 @@ public partial class index : System.Web.UI.Page
     protected void register(object sender, EventArgs e)
     {
 
-        if (txtPasswordR.Text != txtConPasswordR.Text)
+        if (txtPasswordR.Text != txtConPasswordR.Text || txtName.Text=="" || txtEmailR.Text==""||txtAddress.Text=="")
         {
             Response.Write("<script>alert('Password not match')</script>");
         }

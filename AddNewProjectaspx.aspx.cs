@@ -14,46 +14,93 @@ using System.Configuration;
 using System.IO;
 using System.Drawing;
 using System.Runtime.InteropServices;
-
+using System.Web.Script.Serialization;
 [SerializableAttribute]
 [ComVisibleAttribute(true)]
 public partial class AddNewProjectaspx : System.Web.UI.Page
 {
+    MySqlConnection con = new MySqlConnection(DatabaseConnection.ConnectionString);
+
+ static   int image_height;
+  static  int image_width;
+  static  int max_height;
+  static  int max_width;
+  static byte[] data;
+  static string filename;
+  static string contenttype;
+
     protected void Page_Load(object sender, EventArgs e)
     {
-        //if (!IsPostBack)
-        //{
-        //    this.BindGrid();
-        //    PopulateCustomer(GridView1);
-        //}
-    }
-    private void BindGrid()
-    {
-        using (MySqlConnection con = new MySqlConnection(DatabaseConnection.ConnectionString))
+        if (!Page.IsPostBack)
         {
-            using (MySqlCommand cmd = new MySqlCommand())
-            {
-                cmd.CommandText = "SELECT * from addproject";
-                cmd.Connection = con;
-                using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
-                {
-                    DataTable dt = new DataTable();
-                    sda.Fill(dt);
-                    GridView1.DataSource = dt;
-                    GridView1.DataBind();
-                }
-            }
+           // BindGrid2();
         }
+
+
     }
-    protected void OnRowDataBound(object sender, GridViewRowEventArgs e)
-    {
-        if (e.Row.RowType == DataControlRowType.DataRow)
-        {
-            byte[] bytes = (byte[])(e.Row.DataItem as DataRowView)["Content"];
-            string base64String = Convert.ToBase64String(bytes, 0, bytes.Length);
-            (e.Row.FindControl("Picture") as System.Web.UI.WebControls.Image).ImageUrl = "data:image/png;base64," + base64String;
-        }
-    }
+
+    //   private void BindGrid2()
+    //{
+    //    try
+    //    {
+
+    //        con.Open();
+    //        string qry = "Select * from addproject";
+    //        MySqlDataAdapter adp = new MySqlDataAdapter(qry, con);
+    //        DataTable dt = new DataTable();
+    //        adp.Fill(dt);
+
+    //        GridView1.DataSource = dt;
+    //        GridView1.DataBind();
+
+    //        con.Close();
+
+
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        var message = new JavaScriptSerializer().Serialize(ex.Message);
+    //        var script = string.Format("alert({0});", message);
+    //        ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "", script, true);
+
+
+    //    }
+    //    finally
+    //    {
+    //        con.Close();
+    //    }
+
+    //}
+
+    //private void BindGrid()
+    //{
+    //    using (MySqlConnection con = new MySqlConnection(DatabaseConnection.ConnectionString))
+    //    {
+    //        using (MySqlCommand cmd = new MySqlCommand())
+    //        {
+    //            cmd.CommandText = "SELECT * from addproject";
+    //            cmd.Connection = con;
+    //            using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+    //            {
+    //                DataTable dt = new DataTable();
+    //                sda.Fill(dt);
+    //                GridView1.DataSource = dt;
+    //                GridView1.DataBind();
+    //            }
+    //        }
+    //    }
+    //}
+  
+    //protected void OnRowDataBound(object sender, GridViewRowEventArgs e)
+    //{
+    //    if (e.Row.RowType == DataControlRowType.DataRow)
+    //    {
+    //        byte[] bytes = (byte[])(e.Row.DataItem as DataRowView)["Content"];
+    //        string base64String = Convert.ToBase64String(bytes, 0, bytes.Length);
+    //        (e.Row.FindControl("Picture") as System.Web.UI.WebControls.Image).ImageUrl = "data:image/png;base64," + base64String;
+         
+    //    }
+    //}
 
     protected void PopulateCustomer(GridView gv)
     {
